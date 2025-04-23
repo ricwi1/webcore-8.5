@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+} 
+
+/* === общие стили === */
+
+body{
+    font-family:"TT Lakes", sans-serif;
+    margin:0;
+    border-top: 1px solid #B8FFEC;
+    background-color: #F8F8F8;
+}
+.title{
+    color:#7E7E82;
+    margin-top: 16px;
+    margin-left: 32px;
+    font-size: 16px;
+}
