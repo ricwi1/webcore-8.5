@@ -28,24 +28,25 @@ body{
     align-items: center;
 }
 .title_text{
-    margin-left: 16px;
+    margin-left: 32px;
 }
 main{
     display: flex;
     flex-flow: column;
     height: 100vh;
     max-height:398px ;
-    margin: 16px;
+    margin:32px;
 }
-.container{
+.container,  .for1120{
     display:flex;
     flex-flow: row wrap;
-    gap:32px;
+    gap:16px 32px;
 }
 .button_container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
     background-color: white;
     padding: 0 16px;
     border: 1px solid #EAEAEA;
@@ -54,20 +55,33 @@ main{
     height:72px;
 }
 .button_container__logo{
-    max-width: 80%;
-    max-height: 100%;
-    object-fit: contain;
+    height: 52px;
+}
+.button_container__logo-big{
+    height:32px;
+}
+.button_container__logo-medium{
+    height:24px;
 }
 .button_container__go{
     height:40px;
-    object-fit: contain;
 }
 .button_expand{
+    font-family:"TT Lakes", sans-serif;
     display: flex;
     align-items: center;
+    cursor: pointer;
     margin-top: auto;
+    border:none;
+    width:150px;
+    background-color:#F8F8F8 ;
 }
 .button_expand__ic{
     height: 24px;
 }
 
+@media (max-width:768px) {
+    .button_container{
+        width:224px;
+    }
+}
