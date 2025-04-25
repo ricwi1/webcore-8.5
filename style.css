@@ -32,18 +32,14 @@ body{
     margin-left: 32px;
 }
 main{
-    display: flex;
-    flex-flow: column;
     margin:32px;
-    height: 100vh;
-    max-height:350px ;
 }
-.container,  .for1120{
+.container{
     display:flex;
     flex-flow: row wrap;
     gap:16px 32px;
 }
-.button_container{
+.button_container, .button_container-for1120, .button_container-for768{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,7 +68,7 @@ main{
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-top: auto;
+    margin-top: 32px;
     border:none;
     width:150px;
     background-color:#F8F8F8 ;
@@ -81,8 +77,19 @@ main{
     height: 24px;
 }
 
-@media (max-width:768px) {
-    .button_container{
+@media (max-width:1119px) {
+    main{
+        margin: 24px;
+    }
+    .container{
+        gap:24px;
+    }
+    .button_container, .button_container-for1120, .button_container-for768{
         width:224px;
     }
+    .button_expand{
+        margin-top: 24px;
+    }
+
+
 }
