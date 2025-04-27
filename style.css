@@ -19,6 +19,7 @@ body{
     background-color: #F8F8F8;
    
 }
+/* === название === */
 .title{
     border-top: 2px solid #B8FFEC;
     color:#7E7E82;
@@ -31,10 +32,16 @@ body{
 .title_text{
     margin-left: 32px;
 }
-main{
+
+/* === общий контейнер === */
+
+.main_container{
     margin:32px;
 }
-.container{
+
+/* === конпки бренда === */
+
+.main_container-button{
     display:flex;
     flex-flow: row wrap;
     gap:16px 32px;
@@ -63,6 +70,9 @@ main{
 .button_container__go{
     height:40px;
 }
+
+/* === свернуть & показать === */
+
 .button_expand{
     font-family:"TT Lakes", sans-serif;
     display: flex;
@@ -76,12 +86,15 @@ main{
 .button_expand__ic{
     height: 24px;
 }
+.swiper{
+    display:none !important;
+}
 
 @media (max-width:1119px) {
-    main{
+    .main_container{
         margin: 24px;
     }
-    .container{
+    .main_container-button{
         gap:24px;
     }
     .button_container, .button_container-for1120, .button_container-for768{
@@ -90,6 +103,28 @@ main{
     .button_expand{
         margin-top: 24px;
     }
-
-
+}
+@media (max-width:767px){
+    .main_container{
+        display:none;
+    }
+    .swiper{
+        display:flex !important;
+        width:240px;
+        height:72px;
+        margin:16px;
+    }
+    .swiper-slide{
+        cursor: pointer;
+        background-color: white;
+        border: 1px solid #EAEAEA;
+        border-radius: 6px;
+        padding: 16px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .swiper-slide img {
+        max-height: 52px;
+        margin:0 16px;
+    }
 }
