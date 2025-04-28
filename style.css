@@ -104,27 +104,30 @@ body{
         margin-top: 24px;
     }
 }
+
 @media (max-width:767px){
     .main_container{
         display:none;
     }
     .swiper{
         display:flex !important;
-        width:240px;
-        height:72px;
         margin:16px;
+        min-height: 116px;
     }
     .swiper-slide{
-        cursor: pointer;
+        max-height: 72px;
+        width:240px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align:center;
         background-color: white;
+        cursor: pointer;
         border: 1px solid #EAEAEA;
         border-radius: 6px;
-        padding: 16px;
-        align-items: center;
-        justify-content: space-between;
+        position: relative;
     }
-    .swiper-slide img {
-        max-height: 52px;
-        margin:0 16px;
+    .swiper-slide img{
+        margin: 16px;
     }
 }
